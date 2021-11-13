@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  ntt-data-app:
+    build: ./NTTData-app
+    container_name: ntt-data-app
+    environment:
+      - DB_SERVER=goyaservidor.database.windows.net
+      - SQL_SERVER_DB=Goya
+      - SQL_SERVER_USER=pruebas2
+      - SQL_SERVER_PASSWORD=1234567A%
+    ports:
+      - 8080:8080
+
+volumes:
+  ntt-data-data:
