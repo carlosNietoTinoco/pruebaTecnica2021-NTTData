@@ -27,10 +27,10 @@
               Buscar Nombre
             </button>
             <li
-              *ngFor="let nombre of resultados.nombres"
+              *ngFor="let resultado of resultados"
               class="list-group-item list-group-item-action"
             >
-              <span class="badge badge-primary"></span> {{nombre}}}
+              <span class="badge badge-primary"></span> {{resultado.nombres}}
             </li>
           </div>
 

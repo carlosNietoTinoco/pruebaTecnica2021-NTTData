@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "adn-ui": {
+    "NTTData-ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/adn-ui",
+            "outputPath": "dist/NTTData-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,12 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "adn-ui:build:production",
-              "proxyConfig": "proxy.conf.json"
+              "browserTarget": "NTTData-ui:build:production"
             },
             "development": {
-              "browserTarget": "adn-ui:build:development",
-              "proxyConfig": "proxy.conf.json"
+              "browserTarget": "NTTData-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "adn-ui:build"
+            "browserTarget": "NTTData-ui:build"
           }
         },
         "test": {
@@ -109,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "adn-ui"
+  "defaultProject": "NTTData-ui"
 }

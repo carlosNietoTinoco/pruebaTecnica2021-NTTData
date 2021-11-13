@@ -1,3 +1,3 @@
 export interface ResultadoBusquedaPorNombre {
-  nombres: string[];
+  nombres: string;
 }

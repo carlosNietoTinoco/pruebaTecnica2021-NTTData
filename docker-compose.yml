@@ -11,6 +11,14 @@ services:
       - SQL_SERVER_PASSWORD=1234567A%
     ports:
       - 8080:8080
+      
+  ntt-data-ui:
+    build: ./NTTData-ui
+    container_name: ntt-data-ui
+    ports:
+      - 4200:80
+    links:
+      - ntt-data-app
 
 volumes:
   ntt-data-data:

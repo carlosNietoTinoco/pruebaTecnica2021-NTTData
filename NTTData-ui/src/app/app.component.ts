@@ -17,10 +17,8 @@ export class AppComponent {
   ) {}
 
 
-  resultados : ResultadoBusquedaPorNombre = new class implements ResultadoBusquedaPorNombre{
-    nombres = [];
-  }
-  dnaString = "" ;
+  resultados: ResultadoBusquedaPorNombre[] | undefined;
+
   busquedaPorNombre = new BusquedaPorNombre();
 
 
@@ -28,7 +26,6 @@ export class AppComponent {
   buscarNombre() {
     this.nttDataService.buscarNombre(this.busquedaPorNombre)
     .subscribe(resultadoObtenido => {
-      // @ts-ignore
       this.resultados = resultadoObtenido;
     });
   }
