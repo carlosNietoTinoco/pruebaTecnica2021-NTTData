@@ -9,7 +9,7 @@ Es este Readme se especificara la forma de desplegar la aplicación que está co
 
 El punto de entrada para un usuario es un sitio web que está disponible en la dirección: **http://localhost:4200/**
 
-![ADN]()
+![ADN](https://github.com/carlosNietoTinoco/pruebaTecnica2021-NTTData/blob/main/assets/NTTData-ui.png)
 
 
 ---
@@ -32,4 +32,4 @@ Toda la aplicación se puede ejecutar con un solo comando en una terminal abiert
 $ docker-compose up
 ```
 
-Después de esto ya podrá hacer una prueba completa de la aplicación desde cualquier navegador ingresando a **http://localhost:4200/**, tambien puede realizar peticiones al backend de la aplicación, para esto puede usar la colección de postman que se encuentra [aqui]()
+Después de esto ya podrá hacer una prueba completa de la aplicación desde cualquier navegador ingresando a **http://localhost:4200/**, tambien puede realizar peticiones al backend de la aplicación, para esto puede usar la colección de postman que se encuentra [aqui](https://github.com/carlosNietoTinoco/pruebaTecnica2021-NTTData/blob/main/assets/API%20prueba%20tecnica%20NTTData.postman_collection.json)
